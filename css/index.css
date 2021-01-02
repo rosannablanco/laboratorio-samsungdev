@@ -1,0 +1,40 @@
+.title {
+  color: rgb(0, 0, 255);
+  text-align: center;
+  text-shadow: 2px 2px rgb(255, 255, 0);
+}
+
+.legend {
+  background-color: rgb(255, 0, 0);
+  box-shadow: 1px 1px rgb(156, 156, 156);
+  color: rgb(255, 255, 255);
+}
+
+.fieldset {
+  background-color: rgb(85, 255, 255);
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.input {
+  background-color: rgb(255, 255, 0);
+  border: 1px solid rgb(156, 156, 156);
+  border-radius: 5px;
+}
+input.btn {
+  background-color: rgb(189, 189, 189);
+  border: 1px solid rgb(134, 134, 134);
+  cursor: pointer;
+  margin: 3px 0;
+  text-transform: capitalize;
+}
+.btn-show {
+  background-color: rgb(247, 171, 184);
+  border: none;
+  border-radius: 2px;
+  box-shadow: 1px 1px rgb(134, 134, 134);
+  cursor: pointer;
+  text-transform: capitalize;
+  width: 100px;
+}

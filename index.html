@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laboratorio_Rosanna-Blanco-Prado</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="./js/index.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <h1 class="title">Formulario información alta telefónica</h1>
+    <form name="telefonica">
+      <fieldset class="fieldset">
+        <legend class="legend">Datos Personales</legend>
+        <label for="nombre">Nombre: </label>
+        <input class="input" type="text" name="nombre" maxlength="30" />
+        <br />
+        <label for="apellidos">Apellidos: </label>
+        <input class="input" type="text" name="apellidos" maxlength="60" />
+        <br />
+        <label for="direccion">Dirección: </label>
+        <input class="input" type="text" name="direccion" maxlength="60" />
+        <br />
+        <label for="cd">Código Postal: </label>
+        <input class="input" type="text" name="cd" pattern="[0-9]{5}" maxlength="5" />
+        <br />
+        <label for="localidad">Localidad: </label>
+        <input class="input" type="text" name="localidad" />
+      </fieldset>
+      <fieldset class="fieldset">
+        <legend class="legend">Tipo de Contratación</legend>
+        <input type="radio" name="nueva" checked />
+        <label for="nueva">Nueva Contratación</label> &nbsp;&nbsp;
+        <input type="radio" name="portabilidad" />
+        <label for="portabilidad">Portabilidad</label> &nbsp;&nbsp;
+        <input type="radio" name="cambio" />
+        <label for="cambio">Cambio de contrato</label>
+        <br />
+        <br />
+        <label for="origen">Elija la compañía actual:</label>
+        <select name="origen">
+          <option value="movistar">Movistar</option>
+          <option value="vodafone">Vodafone</option>
+          <option value="orange">Orange</option>
+          <option value="yoigo">Yoigo</option>
+          <option value="none">No tengo compañía</option>
+        </select>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="destino">En caso de portabilidad, elija la nueva compañía:</label>
+        <select name="destino">
+          <option value="movistar">Movistar</option>
+          <option value="vodafone">Vodafone</option>
+          <option value="orange">Orange</option>
+          <option value="yoigo">Yoigo</option>
+        </select>
+      </fieldset>
+      <fieldset class="fieldset">
+        <legend class="legend">Datos Bancarios</legend>
+        <label for="pais">País:</label>
+        <input class="input" type="text" id="pais" name="pais" value="ES" readonly="readonly" />
+        (sólo válido ES)<br />
+        <label for="ctrl-iban">Control IBAN:</label>
+        <input
+          class="input"
+          type="text"
+          id="ctrl-iban"
+          name="ctrl-iban"
+          placeholder="XX"
+          pattern="[0-9]{2}"
+          maxlength="2"
+        />
+        (dos dígitos)<br />
+        <label for="entidad">Entidad:</label>
+        <input
+          class="input"
+          type="text"
+          id="entidad"
+          name="entidad"
+          placeholder="XXXX"
+          pattern="[0-9]{4}"
+          maxlength="4"
+        />
+        (cuatro dígitos)<br />
+        <label for="sucursal">Sucursal:</label>
+        <input
+          class="input"
+          type="text"
+          id="sucursal"
+          name="sucursal"
+          placeholder="XXXX"
+          pattern="[0-9]{4}"
+          maxlength="4"
+        />
+        (cuatro dígitos)<br />
+        <label for="dc">DC:</label>
+        <input class="input" type="text" id="dc" name="dc" placeholder="XX" pattern="[0-9]{2}" maxlength="2" />
+        (dos dígitos)<br />
+        <label for="cuenta">Cuenta:</label>
+        <input
+          class="input"
+          type="text"
+          id="cuenta"
+          name="cuenta"
+          placeholder="XXXXXXXXXX"
+          pattern="[0-9]{10}"
+          maxlength="10"
+        />
+        (diez dígitos)<br />
+      </fieldset>
+      <fieldset class="fieldset">
+        <legend class="legend">Datos Estadísticos - ¿Cómo nos conoció?</legend>
+        <input type="checkbox" name="tv" value="tv" />
+        <label for="tv">A través de la TV</label>
+        <br />
+        <input type="checkbox" name="radio" value="radio" />
+        <label for="radio">A través de la radio</label>
+        <br />
+        <input type="checkbox" name="internet" value="internet" />
+        <label for="internet">A través de la TV</label>
+        <br />
+        <input type="checkbox" name="otros" value="otros" />
+        <label for="otros">Otros</label>
+        <br />
+        <br />
+        <input type="range" id="valoracion" name="valoracion" min="1" max="5" value="1" />
+        <label for="valoracion">Valoración [1 - 5]</label>
+        <br />
+        <br />
+        <label for="fecha">Fecha de la Encuesta:</label>
+        <input type="date" id="fecha" name="fecha" min="2019-01-01" value="2019-01-01" />
+      </fieldset>
+      <input class="btn" type="submit" value="Enviar Datos" />
+      <input class="btn" type="reset" value="Borrar Datos" />
+    </form>
+    <button class="btn-show" type="button" onclick="mostrarRango()">Mostrar valoración</button>
+    <button class="btn-show" type="button" onclick="mostrarCuenta()">Mostrar cuenta</button>
+    <button class="btn-show" type="button" onclick="mostrarDia()">Mostrar día semana</button>
+  </body>
+</html>
