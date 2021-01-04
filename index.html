@@ -13,27 +13,27 @@
       <fieldset class="fieldset">
         <legend class="legend">Datos Personales</legend>
         <label for="nombre">Nombre: </label>
-        <input class="input" type="text" name="nombre" maxlength="30" />
+        <input class="input" type="text" id="nombre" name="nombre" maxlength="30" />
         <br />
         <label for="apellidos">Apellidos: </label>
-        <input class="input" type="text" name="apellidos" maxlength="60" />
+        <input class="input" type="text" id="apellidos" name="apellidos" maxlength="60" />
         <br />
         <label for="direccion">Dirección: </label>
-        <input class="input" type="text" name="direccion" maxlength="60" />
+        <input class="input" type="text" id="direccion" name="direccion" maxlength="60" />
         <br />
         <label for="cd">Código Postal: </label>
-        <input class="input" type="text" name="cd" pattern="[0-9]{5}" maxlength="5" />
+        <input class="input" type="text" id="cd" name="cd" pattern="[0-9]{5}" maxlength="5" />
         <br />
         <label for="localidad">Localidad: </label>
-        <input class="input" type="text" name="localidad" />
+        <input class="input" type="text" id="localidad" name="localidad" />
       </fieldset>
       <fieldset class="fieldset">
         <legend class="legend">Tipo de Contratación</legend>
-        <input type="radio" name="nueva" checked />
+        <input type="radio" id="nueva" name="contrato" checked />
         <label for="nueva">Nueva Contratación</label> &nbsp;&nbsp;
-        <input type="radio" name="portabilidad" />
+        <input type="radio" id="portabilidad" name="contrato" />
         <label for="portabilidad">Portabilidad</label> &nbsp;&nbsp;
-        <input type="radio" name="cambio" />
+        <input type="radio" id="cambio" name="contrato" />
         <label for="cambio">Cambio de contrato</label>
         <br />
         <br />
@@ -109,16 +109,16 @@
       </fieldset>
       <fieldset class="fieldset">
         <legend class="legend">Datos Estadísticos - ¿Cómo nos conoció?</legend>
-        <input type="checkbox" name="tv" value="tv" />
+        <input type="checkbox" id="tv" name="medio" value="tv" />
         <label for="tv">A través de la TV</label>
         <br />
-        <input type="checkbox" name="radio" value="radio" />
+        <input type="checkbox" id="radio" name="medio" value="radio" />
         <label for="radio">A través de la radio</label>
         <br />
-        <input type="checkbox" name="internet" value="internet" />
+        <input type="checkbox" id="internet" name="medio" value="internet" />
         <label for="internet">A través de la TV</label>
         <br />
-        <input type="checkbox" name="otros" value="otros" />
+        <input type="checkbox" id="otros" name="medio" value="otros" />
         <label for="otros">Otros</label>
         <br />
         <br />
